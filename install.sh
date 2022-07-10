@@ -6,7 +6,7 @@
 #    By: macourio <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/10 07:55:12 by macourio          #+#    #+#              #
-#    Updated: 2022/07/10 09:10:30 by macourio         ###   ########lyon.fr    #
+#    Updated: 2022/07/10 09:38:19 by macourio         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,4 +24,5 @@ else
 	echo "\n\n" >> ~/.bashrc
 fi
 export PATH=$PATH:$HOME/loupe/loupe.sh
+alias loupe="$HOME/loupe/loupe.sh"
 echo "Installation complete !!"
