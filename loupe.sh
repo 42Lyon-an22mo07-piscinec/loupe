@@ -6,7 +6,7 @@
 #    By: macourio <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 14:21:41 by macourio          #+#    #+#              #
-#    Updated: 2022/07/07 17:59:00 by macourio         ###   ########lyon.fr    #
+#    Updated: 2022/07/10 09:13:34 by macourio         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ then
 	else
 		echo "⛔️ Norminette error !"
 		norminette -R CheckForbiddenSourceHeader $@
+		rm -r loupeEval
 		exit
 	fi
 	mkdir loupeEval
@@ -51,6 +52,7 @@ then
 		if [[ ! -f "a.out" ]]
 		then
 			echo "⛔️ Does not compile !"
+			rm -r loupeEval
 			exit
 		fi
 		./a.out > res

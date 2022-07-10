@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   main7.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agaley <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: macourio <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/06 18:19:42 by agaley            #+#    #+#             */
-/*   Updated: 2022/07/07 15:01:37 by agaley           ###   ########lyon.fr   */
+/*   Created: 2022/07/08 10:40:58 by macourio          #+#    #+#             */
+/*   Updated: 2022/07/08 10:43:27 by macourio         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-void ft_print_comb2();
-//void ft_putnum3(int i, int j, int k);
 
-int main()
+#include <stdio.h>
+
+char	*ft_strupcase(char *str);
+
+int	main(void)
 {
-	ft_print_comb2();
-	//int i = 3;
-	//int j = 2;
-	//int k = 8;
-	//ft_putnum3(i, j, k);
-	return 0;
+	char a[] = "LoGiN MaCouRio voTe sTp";
+	printf("%s\n", ft_strupcase(a));
 }
